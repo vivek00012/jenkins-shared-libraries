@@ -1,4 +1,4 @@
-def push(String projectName,String imageTag,String dockerHubUser){
+def call(String projectName,String imageTag,String dockerHubUser){
     echo "Pushing Docker Image to Docker Hub"
      withCredentials([usernamePassword(
                     credentialsId: "dockerhub",
